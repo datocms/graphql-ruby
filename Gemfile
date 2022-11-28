@@ -11,6 +11,8 @@ if RUBY_VERSION >= "2.3"
   gem 'pry-byebug'
 end
 
+gem 'eventmachine', github: 'eventmachine/eventmachine'
+
 # Required for running `jekyll algolia ...` (via `rake site:update_search_index`)
 group :jekyll_plugins do
   if RUBY_VERSION >= "2.3"
